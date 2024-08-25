@@ -1,8 +1,4 @@
-# This first line is provided for you
-
 hrs = input("Enter Hours: ")
 rate = input("Enter your rate: ")
-fhrs = float(hrs)
-frate = float(rate)
-pay = fhrs * frate
+pay = float(hrs) * float(rate)
 print('Pay:',pay)

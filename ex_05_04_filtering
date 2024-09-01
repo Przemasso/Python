@@ -1,0 +1,5 @@
+print('Before')
+for value in [9, 12, 43, 45, 6, 67] :
+    if value > 20 :
+        print('Large number', value)
+print("After")

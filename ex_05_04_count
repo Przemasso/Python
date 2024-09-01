@@ -1,0 +1,8 @@
+#setting counter value if need to count items
+count = 0
+print ('Before', count)
+for thing in [9, 41, 12, 3, 74,15] :
+#adding +1 by each of iterations to count items
+    count = count + 1
+    print (thing, count)
+print ('After', count)

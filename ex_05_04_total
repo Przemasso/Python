@@ -1,0 +1,8 @@
+#setting summing variable to 0
+total = 0
+print ('Before', total)
+for thing in [9, 41, 12, 3, 74,15] :
+#adding value of total to value of current iteration variable
+    total = total + thing
+    print (total, thing)
+print ('After', total)

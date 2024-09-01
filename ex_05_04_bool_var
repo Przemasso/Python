@@ -1,0 +1,8 @@
+found = False
+print('Before', found)
+for value in [34, 120, 234432, 432432, 3, 432432, 432423, 5, 432423] :
+    if value == 3 :
+        found = True
+    print(found, value)
+print('After', found)
+    

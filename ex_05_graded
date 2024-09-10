@@ -1,0 +1,55 @@
+largest = -1
+smallest = None
+while True:
+    num = input("Enter a number: ")
+    if num == "done":
+        break
+    try :
+        inum = int(num)
+    except :
+        print('Invalid input')
+    if smallest is None :
+        smallest = inum
+        largest = inum
+    elif inum < smallest :
+        smallest = inum
+    elif inum > largest:
+        largest = inum
+
+print('Maximum is', largest)
+print('Minimum is', smallest)
+
+
+def smallest_so_far(num) :
+    smallest = None
+    while True:
+        num = input("Enter a number: ")
+        if num == 'done':
+            break
+        try :
+            inum = int(num)
+        except :
+            print('Invalid input: ')
+        if smallest is None :
+            smallest = inum
+        elif inum < smallest :
+            smallest = inum
+        print('Smallest', smallest)
+
+def largest_so_far(num) :
+    largest = -1
+    while True:
+        num = input("Enter a number: ")
+        if num == 'done':
+            break
+        try :
+            inum = int(num)
+        except :
+            print('Invalid input: ')
+        if inum > largest :
+            largest = inum
+        print('Largest', largest)
+
+#num = input('Enter a number: ')
+#smallest_so_far(num)
+#largest_so_far(num)

@@ -8,4 +8,5 @@ except:
 for word in fh:
     uword = word.upper()
 #    strword = uword.rstrip()
+#uword is a string variable and rstrip is a method
     print(uword.rstrip())

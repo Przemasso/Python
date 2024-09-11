@@ -7,5 +7,5 @@ except:
     quit()
 for word in fh:
     uword = word.upper()
-    strword = uword.rstrip()
-    print(strword)
+#    strword = uword.rstrip()
+    print(uword.rstrip())

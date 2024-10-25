@@ -12,7 +12,7 @@ for line in handle:
     word = line.rstrip()
 # check for particular lines 
     if word.startswith("From "):
-# if line starts with From, split it to separate words
+# if line starts with From, split it to separate words and build a list of it
         senderLine = word.split()
 # look for sender mail - second  
         senders = senderLine[1]
@@ -25,6 +25,7 @@ for sender in lst:
     counts[sender] = counts.get(sender, 0) +1
 bignum = None
 bigppl = None
+# max loop - verify!
 for ppl,num in counts.items():
     if bignum is None or num > bignum:
         bignum = num
